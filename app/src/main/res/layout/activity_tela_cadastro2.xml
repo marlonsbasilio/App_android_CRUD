@@ -160,6 +160,7 @@
         android:text="Email de Recuperaçao"
         android:textSize="20sp"
         android:textStyle="bold"
+
         android:textColor="@color/black"
         android:layout_marginTop="20dp"
         android:layout_marginStart="40dp"
@@ -174,6 +175,7 @@
         style="@style/Edit_Text_Cadastro"
         android:hint="Email de recuperação (opcional)"
         android:maxLength="25"
+        android:inputType="textEmailAddress"
         android:layout_marginTop="20dp"
 
 

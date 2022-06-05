@@ -92,7 +92,7 @@
         style="@style/Edit_Text_Cadastro"
         android:hint="CPF"
         android:maxLength="11"
-        android:inputType="textNoSuggestions"
+        android:inputType="number"
         app:layout_constraintStart_toStartOf="@+id/container_cadastro"
         app:layout_constraintEnd_toEndOf="@+id/container_cadastro"
         app:layout_constraintTop_toBottomOf="@id/Sobrenome"
@@ -104,7 +104,7 @@
 
         style="@style/Edit_Text_Cadastro"
         android:hint="Telefone"
-        android:inputType="textAutoComplete"
+        android:inputType="phone"
         app:layout_constraintStart_toStartOf="@+id/container_cadastro"
         app:layout_constraintEnd_toEndOf="@+id/container_cadastro"
         app:layout_constraintTop_toBottomOf="@id/CPF"

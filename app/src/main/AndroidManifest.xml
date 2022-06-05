@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TelaDeLogin">
         <activity
-            android:name=".Tela_Cadastro2"
-            android:exported="false" />
-        <activity
             android:name=".TelaRecSenha3"
             android:exported="false" />
         <activity
-            android:name=".TelaRecSenha2"
+            android:name=".FormLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Tela_Cadastro2"
             android:exported="false" />
         <activity
             android:name=".TelaRecuperarSenha"
@@ -31,7 +31,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".FormLogin"
+            android:name=".TelaRecSenha2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

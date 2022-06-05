@@ -78,7 +78,8 @@
 
     style="@style/Edit_Text_Cadastro"
     android:hint="Código"
-    android:inputType="textEmailAddress"
+    android:inputType="number"
+    android:maxLength="6"
     android:layout_marginTop="10dp"
     app:layout_constraintStart_toStartOf="@+id/container_recsenha2"
     app:layout_constraintEnd_toEndOf="@+id/container_recsenha2"
@@ -94,8 +95,7 @@
         style="@style/Button"
         android:text="Reenviar Código"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_margin="30dp"
 
 
         app:layout_constraintStart_toStartOf="@id/container_recsenha2"
@@ -113,8 +113,7 @@
 
     android:text="@string/bt_confirmar"
     android:layout_marginTop="20dp"
-    android:layout_marginEnd="30dp"
-    android:layout_marginBottom="30dp"
+        android:layout_margin="30dp"
 
     app:layout_constraintBottom_toBottomOf="@id/container_recsenha2"
     app:layout_constraintEnd_toEndOf="@id/container_recsenha2"
