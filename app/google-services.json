@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "239543222153",
+    "project_id": "app-carona-1d73e",
+    "storage_bucket": "app-carona-1d73e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239543222153:android:3a121d83153d3fec902b58",
+        "android_client_info": {
+          "package_name": "bd.projeto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239543222153-7300sjscku8g5ngvg29purd2obbfv177.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdBKMdPgj_4eg3laqgfbtIRsQ56xXwarg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239543222153-7300sjscku8g5ngvg29purd2obbfv177.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

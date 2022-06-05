@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Tela_Cadastro2">
+
+
+    <View
+        android:id="@+id/container_cadastro2"
+
+        style="@style/Container2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        />
+
+    <ImageView
+        android:id="@+id/cadastro_button2"
+        style="@style/Titulo"
+
+        app:layout_constraintEnd_toEndOf="@id/container_cadastro2"
+        app:layout_constraintStart_toStartOf="@id/container_cadastro2"
+        app:layout_constraintTop_toTopOf="@id/container_cadastro2"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar Conta"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+
+        app:layout_constraintStart_toStartOf="@id/cadastro_button2"
+        app:layout_constraintEnd_toEndOf="@id/cadastro_button2"
+        app:layout_constraintTop_toTopOf="@id/cadastro_button2"
+        app:layout_constraintBottom_toBottomOf="@id/cadastro_button2"
+
+        />
+
+    <TextView
+
+        android:id="@+id/Inform2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_informe"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/container_cadastro2"
+        app:layout_constraintEnd_toEndOf="@id/container_cadastro2"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro_button2"
+
+        />
+
+    <TextView
+
+        android:id="@+id/Texto_Data_de_Nasc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de Nascimento"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="@id/container_cadastro2"
+        app:layout_constraintTop_toBottomOf="@+id/Inform2"
+
+        />
+
+    <EditText
+
+        android:id="@+id/Dia"
+        android:layout_width="80dp"
+        style="@style/Edit_Text_Cadastro"
+        android:hint="Dia"
+        android:textAlignment="center"
+        android:inputType="date"
+        android:maxLength="2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+
+        app:layout_constraintStart_toStartOf="@+id/container_cadastro2"
+        app:layout_constraintTop_toBottomOf="@id/Texto_Data_de_Nasc"
+        />
+
+    <EditText
+
+        android:id="@+id/Mes"
+        android:layout_width="100dp"
+
+        style="@style/Edit_Text_Cadastro"
+        android:hint="Mes"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:inputType="datetime"
+        app:layout_constraintStart_toEndOf="@+id/Dia"
+        app:layout_constraintTop_toBottomOf="@id/Texto_Data_de_Nasc"
+        />
+
+
+    <EditText
+
+        android:id="@+id/Ano"
+        android:layout_width="90dp"
+
+        style="@style/Edit_Text_Cadastro"
+        android:hint="Ano"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:inputType="datetime"
+        app:layout_constraintStart_toEndOf="@+id/Mes"
+        app:layout_constraintTop_toBottomOf="@id/Texto_Data_de_Nasc"
+        />
+
+
+    <TextView
+
+        android:id="@+id/Text_Genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genero"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="@id/container_cadastro2"
+
+        app:layout_constraintTop_toBottomOf="@id/Dia"
+        />
+
+    <EditText
+
+        android:id="@+id/Barra_genero"
+        style="@style/Edit_Text_Cadastro"
+        android:hint="Ex: Masculino, Feminino, Outro"
+
+        app:layout_constraintStart_toStartOf="@id/container_cadastro2"
+        app:layout_constraintEnd_toEndOf="@id/container_cadastro2"
+        app:layout_constraintTop_toBottomOf="@id/Text_Genero"
+        />
+
+    <TextView
+
+        android:id="@+id/text_email_recuperacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email de Recuperaçao"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="@id/container_cadastro2"
+
+        app:layout_constraintTop_toBottomOf="@id/Barra_genero"
+        />
+
+    <EditText
+
+        android:id="@+id/Barra_email_recuperacao"
+        style="@style/Edit_Text_Cadastro"
+        android:hint="Email de recuperação (opcional)"
+        android:maxLength="25"
+        android:layout_marginTop="20dp"
+
+
+        app:layout_constraintStart_toStartOf="@id/container_cadastro2"
+        app:layout_constraintEnd_toEndOf="@id/container_cadastro2"
+        app:layout_constraintTop_toBottomOf="@id/text_email_recuperacao"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+
+        android:id="@+id/bt_confirmar"
+        style="@style/Button_solid"
+        android:text="Confirmar"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+
+        app:layout_constraintStart_toEndOf="@id/container_cadastro2"
+        app:layout_constraintEnd_toEndOf="@id/container_cadastro2"
+        app:layout_constraintBottom_toBottomOf="@id/container_cadastro2"
+        />
+
+    <ImageView
+
+        android:id="@+id/icone_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+
+        app:layout_constraintStart_toStartOf="@id/cadastro_button2"
+        app:layout_constraintTop_toTopOf="@id/cadastro_button2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 de 2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintStart_toStartOf="@id/container_cadastro2"
+        app:layout_constraintEnd_toEndOf="@id/container_cadastro2"
+        app:layout_constraintBottom_toTopOf="@id/bt_confirmar"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TelaRecSenha2">
+
+<TextView
+    android:id="@+id/gambiarra"
+    android:layout_width="100dp"
+    android:layout_height="125dp"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+<View
+    android:id="@+id/container_recsenha2"
+    style="@style/Container2"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/gambiarra"
+    />
+
+<ImageView
+    android:id="@+id/bt_recuperar_senha"
+    style="@style/Titulo"
+
+    app:layout_constraintEnd_toEndOf="@+id/container_recsenha2"
+    app:layout_constraintStart_toStartOf="@+id/container_recsenha2"
+    app:layout_constraintTop_toTopOf="@+id/container_recsenha2"
+
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/string_recuperar"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textAllCaps="true"
+
+    app:layout_constraintStart_toStartOf="@+id/bt_recuperar_senha"
+    app:layout_constraintEnd_toEndOf="@+id/bt_recuperar_senha"
+    app:layout_constraintTop_toTopOf="@+id/bt_recuperar_senha"
+    app:layout_constraintBottom_toBottomOf="@+id/bt_recuperar_senha"
+
+    />
+
+<TextView
+
+    android:id="@+id/Texto_digitar_codigo"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:text="Digite o Código enviado por email"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="20dp"
+    app:layout_constraintStart_toStartOf="@+id/container_recsenha2"
+    app:layout_constraintEnd_toEndOf="@+id/container_recsenha2"
+    app:layout_constraintTop_toBottomOf="@+id/bt_recuperar_senha"
+
+
+    />
+
+<EditText
+
+    android:id="@+id/barra_redefsenha2"
+
+    style="@style/Edit_Text_Cadastro"
+    android:hint="Código"
+    android:inputType="textEmailAddress"
+    android:layout_marginTop="10dp"
+    app:layout_constraintStart_toStartOf="@+id/container_recsenha2"
+    app:layout_constraintEnd_toEndOf="@+id/container_recsenha2"
+    app:layout_constraintTop_toBottomOf="@id/Texto_digitar_codigo"
+    />
+
+    <android.support.v7.widget.AppCompatButton
+
+        android:id="@+id/bt_reenviar_codigo"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:textSize="15sp"
+        style="@style/Button"
+        android:text="Reenviar Código"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+
+
+        app:layout_constraintStart_toStartOf="@id/container_recsenha2"
+        app:layout_constraintBottom_toBottomOf="@id/container_recsenha2"
+
+        />
+
+    <android.support.v7.widget.AppCompatButton
+
+    android:id="@+id/bt_confirmar_recsenha"
+    android:layout_width="140dp"
+    android:layout_height="80dp"
+    android:textSize="13sp"
+    style="@style/Button_solid"
+
+    android:text="@string/bt_confirmar"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="30dp"
+
+    app:layout_constraintBottom_toBottomOf="@id/container_recsenha2"
+    app:layout_constraintEnd_toEndOf="@id/container_recsenha2"
+    />
+
+    <ImageView
+
+        android:id="@+id/icone_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+
+        app:layout_constraintStart_toStartOf="@id/bt_recuperar_senha"
+        app:layout_constraintTop_toTopOf="@id/bt_recuperar_senha"
+        />
+
+</android.support.constraint.ConstraintLayout>

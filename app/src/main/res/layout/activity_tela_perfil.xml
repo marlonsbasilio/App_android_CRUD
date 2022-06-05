@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TelaPerfil">
+
+
+
+    <View
+        android:id="@+id/container_perfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/container_perfil"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintStart_toStartOf="@id/container_perfil"
+        app:layout_constraintEnd_toEndOf="@id/container_perfil"
+        app:layout_constraintTop_toTopOf="@id/container_perfil"
+        app:layout_constraintBottom_toBottomOf="@id/container_perfil"
+
+    />
+
+    <ImageView
+
+        android:id="@+id/icone_user"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_perfil"
+        />
+
+
+    <TextView
+
+        android:id="@+id/text_nomeperfil"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Marlon Silveira Basílio"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/container_perfil"
+        app:layout_constraintStart_toEndOf="@id/icone_user"
+
+        />
+
+    <ImageView
+
+        android:id="@+id/icone_perfilemail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icone_user"
+        />
+
+    <TextView
+
+        android:id="@+id/text_perfilemail"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="marlonsbasilio@gmail.com"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/text_nomeperfil"
+        app:layout_constraintStart_toEndOf="@id/icone_perfilemail"
+
+        />
+
+    <android.support.v7.widget.AppCompatButton
+
+        android:id="@+id/bt_logout"
+        style="@style/Button_solid"
+        android:text="@string/bt_sair"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+
+
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

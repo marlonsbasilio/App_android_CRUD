@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">app-carona</string>
+    <string name="entrar">Entrar</string>
+    <string name="criar_conta">Crie sua conta aqui</string>
+    <string name="esqueceu_senha">Esqueceu sua senha? Clique aqui</string>
+    <string name="titulo_informe">Informações Pessoais</string>
+    <string name="bt_confirmar">Confirmar</string>
+    <string name="bt_sair">Sair</string>
+    <string name="bt_enviar">Enviar</string>
+    <string name="string_recuperar">Recuperar Senha</string>
+</resources>
